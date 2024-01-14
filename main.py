@@ -1,4 +1,3 @@
-from typing import Union
 from random import randint
 
 import requests
@@ -33,7 +32,6 @@ def read_root():
 
     rand_media_url = settings.media_endpoint_url + settings.media_default_category + '/' + media['files'][num_rand]['href']
 
-    # return render_template('home.html', categories=categories['dirs'],media_type=rand_media_type,media_url=rand_media_url)
     return {"media_type": rand_media_type, "media_url": rand_media_url}
 
 
